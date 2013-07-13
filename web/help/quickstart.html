@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>INTREPID QuickStart Guide</title>
+    
+    <link rel="stylesheet" type="text/css" href="../intrepid.css"></link>
+    <style type="text/css">
+        .image
+        {
+	       border-style: outset;
+	       border-color: black;
+	       border-width: 1px;
+        }
+    </style>
+</head>
+<body leftmargin=20 rightmargin=20 topmargin=20>
+    
+    <p class="bpg_text" style="font-size: large;">
+    A Quick-Start guide to using the INTREPID Server for
+    inference of evolutionarily conserved residues
+    </p>
+    
+    <p class="bpg_text">
+    The INTREPID server has been designed to be easy to
+    use, providing a familiar sequence-based interface
+    to complex phylogenomic analysis.
+    </p>
+    
+    <p class="bpg_text">
+    To begin an analysis, paste a FASTA-formatted protein
+    sequence in the sequence box (Fig. 1). Optionally, you may provide
+    your email address, in which case an email will be sent
+    to you when your results are available.
+    </p>
+    
+    <p class="bpg_text">
+    Click the <q>Submit</q> button to start the analysis.
+    </p>
+    
+    <center>
+    <img class="image" width=600 src="./quickstart-pics/submit-sequence.png"></img>
+    <p class="bpg_text">
+    Figure 1: Paste a protein sequence in the sequence box and
+    click <q>Submit</q> to start an analysis.
+    </p>
+    </center>
+    
+    <p class="bpg_text">
+    When INTREPID starts, a URL link will be provided (Fig. 2). You can
+    click on this link at any time to check the progress of
+    your analysis. You can also bookmark this link to check
+    at a later time.
+    </p>
+    
+    <p class="bpg_text">
+    As INTREPID runs, information about the progress of your
+    analysis is printed to the screen, which will be refreshed
+    every 15 seconds (Fig. 2).
+    </p>
+    
+    <center>
+    <img class="image" src="./quickstart-pics/intrepid-running.png">
+    <p class="bpg_text">
+    Figure 2. The INTREPID server provides a bookmark link to check
+    progress at a later time. The progress of the analysis is displayed
+    as a running log.
+    </p>
+    </center>
+    
+    <p class="bpg_text">
+    When INTREPID has finished, a link to your results will be
+    provided (Fig. 3). If you supplied your email address, this link
+    will also be emailed to you.
+    </p>
+    
+    <center>
+    <img class="image" src="./quickstart-pics/intrepid-done.png">
+    <p class="bpg_text">
+    Figure 3. A results link is provided when INTREPID has completed.
+    The output log is available for inspection.
+    </p>
+    </center>
+    
+    <p class="bpg_text">
+    Following this link will display the results of your analysis (Fig. 4),
+    which include a link to the raw INTREPID results as a text file,
+    a plot of conserved residues on a 3D structure of your query
+    sequence (if a 3D structure was available or could be constructed
+    using comparative modelling), and a plot of the INTREPID conservation
+    score for each position in the query sequence.
+    </p>
+    
+    <center>
+    <img class="image" width=600 src="./quickstart-pics/intrepid-results-01.png">
+    <p class="bpg_text">
+    Figure 4. The INTREPID results viewer coordinates the display of
+    significantly conserved residues on the 3D protein structure
+    and across the query sequence.
+    </p>
+    </center>
+    
+    <p class="bpg_text">
+    The INTREPID results viewer uses a conservation score cutoff to
+    highlight significantly conserved residues in both the structure
+    and sequence displays. Residues with a conservation score at least
+    as large as the cutoff are displayed in blue.
+    </p>
+    
+    <p class="bpg_text">
+    The conservation score cutoff can be changed by moving the slider
+    below the 3D structure (Fig. 5). (If no 3D structure is available, this 
+    slider
+    is to the left of the sequence display.) Dragging the slider changes
+    the score cutoff; releasing the slider refreshes the displays with
+    the new cutoff value.
+    </p>
+    
+    <center>
+    <img class="image" src="./quickstart-pics/intrepid-3D.png">
+    <p class="bpg_text">
+    Figure 5. Manipulating the slider highlights more or fewer
+    conserved residues as significant (colored blue).
+    </p>
+    </center>
+    
+    <p class="bpg_text">
+    Thank you for taking the time to explore the INTREPID evolutionary
+    conservation inference server. We hope you find the server both
+    useful and easy to use.
+    </p>
+    
+</body>
+</html>

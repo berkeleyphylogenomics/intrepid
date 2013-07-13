@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>INTREPID Inference of Evolutionarily Conserved Residues</title>
+
+    <!-- include ext scripts -->
+    <script type="text/javascript" src="ext-2.2/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="ext-2.2/ext-all-debug.js"></script>
+
+    <!-- include javascript for this page -->
+    <script type="text/javascript" src="./intrepid.js"></script>
+
+    <!-- include stylesheets -->
+    <link rel="stylesheet" type="text/css" href="ext-2.2/resources/css/ext-all.css"></link>
+    <link rel="stylesheet" type="text/css" href="./intrepid.css"></link>
+</head>
+<body>
+   
+    <table cellspacing=10 border=0 align=center>
+        <tr>
+            <td align=center>
+                <img src="intrepid-banner.jpg"></img>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <p class="bpg_text">
+                Created by the 
+                <a href="http://phylogenomics.berkeley.edu">
+                    Berkeley Phylogenomics Group
+                </a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td align=center>
+            <!-- place to put the input form -->
+            <div id="seqinputform"></div>
+            </td>
+        </tr>
+        <tr>
+            <td align=center>
+                <p class="bpg_text">
+                <a href="./help/intrepid.html">about INTREPID</a>&nbsp&nbsp&nbsp&nbsp
+                <a href="./help/server.html">about the server</a>&nbsp&nbsp&nbsp&nbsp
+                <a href="./help/quickstart.html">quick start guide</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border=0>
+                    <tr>
+                        <td width=60>&nbsp</td>
+                        <td style="text-align: justify; ">
+                            <p class="bpg_text">
+                            The function of a protein is largely a result of
+                            its primary sequence, but not all positions in the protein
+                            sequence are equally important for determining function. Some
+                            positions are absolutely critical for protein function, while
+                            others are less important.
+                            <br>
+                            <br>
+                            Evolutionary theory suggests that functionally critical 
+                            residues should be highly conserved across all members of
+                            a protein family. Residues responsible for functional
+                            differences in protein subfamilies may have more restricted     
+                            distributions of evolutionary conservation. 
+                            <br>
+                            <br>
+                            Our INTREPID algorithm 
+                            (<a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/24/21/2445" target="_blank">Sankararaman and Sj&ouml;lander, Bioinformatics 2008</a>)   
+                            exploits patterns of evolutionary conservation across a
+                            protein family phylogeny to infer functionally critical
+                            residues for a query sequence.
+                            <br>
+                            <br>
+                            The INTREPID server has been designed to be easy to use: 
+                            paste a standard FASTA-formatted protein query sequence 
+                            in the text box, then click the "Submit" button.
+                            <br>
+                            <br>
+                            Although easy to use, the INTREPID server performs a number
+                            of complex analyses, including retrieving homologous proteins,
+                            constructing a multiple sequence alignment, inferring a 
+                            protein family phylogeny, building a comparative 3D structural
+                            model of the query sequence, and identifying evolutionarily
+                            conserved residues.
+                            <br>
+                            <br>
+                            Due to the computational complexity of these analyses, 
+                            results may not be available for an hour or more. In the
+                            case of extremely large protein families with thousands of
+                            highly divergent homologs, analyses can take a few hours to
+                            complete.
+                            <br>
+                            <br>
+                            After submitting your sequence for analysis, a URL link
+                            will be provided, which will allow you to check the progress
+                            of your analysis at a later time. You may also provide your
+                            email address, in which case an email will be sent to you when
+                            your results are ready.
+                            </p>
+                            <hr style="color: black; background-color: black; height: 3px;">
+                            <p class="bpg_text">
+                            Links to example results:
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp<a href="/cgi-bin/intrepid/view_intrepid.py?workdir=/home/bpg/intrepid/I1"><i>Mycobacterium tuberculosis</i> hypothetical protein Rv1873</a>
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp<a href="/cgi-bin/intrepid/view_intrepid.py?workdir=/home/bpg/intrepid/I2">reconstructed ancestral corticosteroid receptor</a>
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp<a href="/cgi-bin/intrepid/view_intrepid.py?workdir=/home/bpg/intrepid/I3"><i>Escherichia coli</i> probable alcohol dehydrogenase</a>
+                            <br>
+                            &nbsp&nbsp&nbsp&nbsp<a href="/cgi-bin/intrepid/view_intrepid.py?workdir=/home/bpg/intrepid/I4"><i>Plasmodium falciparum</i> sporozoite stage TSP1 domain protein, S21</a>
+                            </p>
+                        </td>
+                        <td width=60>&nbsp</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
